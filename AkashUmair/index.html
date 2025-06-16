@@ -38,6 +38,15 @@
   <script src="./matter.js" defer></script>
 </head>
 
+<div id="successPopup" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+  <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+    <p class="text-lg font-semibold mb-4">✅ Message sent successfully!</p>
+    <button onclick="document.getElementById('successPopup').classList.add('hidden')" class="px-4 py-2 bg-[#1788ae] text-white rounded">
+      Close
+    </button>
+  </div>
+</div>
+
 <body class="bg-[#111] text-white font-['Nunito']">
   <section class="flex flex-col justify-between h-screen">
     <header class="z-10 pointer-events-none flex items-center justify-between w-full px-4 mt-4 max-w-screen-xl mx-auto">
