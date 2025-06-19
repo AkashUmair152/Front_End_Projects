@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Image Card Swiper Section</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <section class="categories-section">
+    <div class="heading">
+      <h1>Shop by Categories</h1>
+      <div class="nav-buttons">
+        <div class="left"><img src="/image/left.svg" alt="Prev"></div>
+        <div class="right"><img src="/image/right.svg" alt="Next"></div>
+      </div>
+    </div>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="/image/Group-3628-1-540x840.jpg" alt="Image 1">
+        <h4>Men(9)</h3>
+        </div>
+        <div class="swiper-slide"><img src="/image/Group-3629-1-540x840.jpg" alt="Image 2">
+            <h4>Women (4)</h3>
+        
+        </div>
+        <div class="swiper-slide"><img src="/image/kids-540x840.jpg" alt="Image 3">
+        <h4>Kids (12)</h3></div>
+        <div class="swiper-slide"><img src="/image/Mask-Group-2-1-540x840.jpg" alt="Image 5">
+        <h4>Skirts (4)</h3></div>
+        <div class="swiper-slide"><img src="/image/shirt-1.jpg" alt="Image 6">
+        <h4>Shirts (1)</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: '.right',
+        prevEl: '.left',
+      },
+      grabCursor: true,
+      breakpoints: {
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 15
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

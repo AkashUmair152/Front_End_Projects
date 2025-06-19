@@ -1,0 +1,129 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+        background-color: #fff;
+
+      font-family: Arial, sans-serif;
+    }
+
+    .categories-section {
+      max-width: 1300px;
+      min-width: 1200px; /* Ensures space for 4 slides */
+      margin: 0 auto;
+      padding: 40px 20px;
+      
+    }
+
+    h4 {
+  background-color: #fff;
+  padding: 12px 24px; /* Slightly more breathing room */
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%); /* Cleaner centering */
+  color: #000;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: capitalize; /* Optional: adds visual flair */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Adds depth */
+  white-space: nowrap; /* Prevents wrapping unless needed */
+}
+
+    .categories-section .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    .categories-section .heading h1 {
+      font-size: 24px;
+      color: #000;
+    }
+
+    .categories-section .nav-buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    .categories-section .nav-buttons div {
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .categories-section .nav-buttons div:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .categories-section .nav-buttons img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .categories-section .swiper {
+      width: 100%;
+    }
+
+    .categories-section .swiper-slide {
+      height: 400px;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(245, 242, 242, 0.4);
+      position: relative;
+    }
+
+    .categories-section .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .categories-section .swiper-slide:hover img {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 1200px) {
+      .categories-section {
+        min-width: auto;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .categories-section .swiper-slide {
+        height: 70vh;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .categories-section .swiper-slide {
+        height: 80vh;
+        width: 100%;
+      }
+
+      .categories-section .nav-buttons div {
+        transform: rotate(90deg);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .categories-section .swiper-slide {
+        height: 200px;
+      }
+    }
